@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head
+<body>
+    <h1>background color change</h1>
+    <button onclick="colour()">Change background color</button>
+    
+    <script>
+        function colour(){
+        document.body.style.backgroundColor="yellow";
+   
+        }
+    </script>
+     <h1>background color change</h1>
+    <button onclick="color()">Change background color</button>
+    
+    <script>
+        function color(){
+        document.body.style.backgroundColor="green";
+   
+        }
+        </script>
+
+        <h1>Ramdom bg color</h1>
+        <button onclick="change()">change color</button>
+        <button onclick="alert('successful')">Alert</button>
+    <h1 id="head">hello students!</h1>
+        <button onclick="text()">change text</button>
+        
+        
+        
+        <script>
+            function change(){
+                const randomcolor=["red","blue","green","yellow","pink","purple"];
+                let color=randomcolor[Math.floor(Math.random()*randomcolor.length)];
+                document.body.style.backgroundColor=color;
+            }
+        
+            function text(){
+                document.getElementById("head").textContent="Lets go to the session!";
+            }
+
+           
+
+
+        </script>
+
+    
+</body>
+</html>
